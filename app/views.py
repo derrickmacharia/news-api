@@ -13,10 +13,10 @@ def index():
     message = 'Hello World'
     return render_template('index.html',message = message)
 
-@app.route('//<movie_id>')
-def movie(movie_id):
+@app.route('/news/<int:news_id>')
+def news(news_id):
 
     '''
-    View movie page function that returns the movie details page and its data
+    View news page function that returns the news details page and its data
     '''
-    return render_template('movie.html',id = movie_id)
+    return render_template('news.html',id = news_id)

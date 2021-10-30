@@ -9,6 +9,15 @@
         {% endif %}
     </head>
     <body>
-
-    </body>
+        <ul>
+            {% for source in sources %}
+            <h4><a href="/article/{{source.id}}">
+              <p class="card-text">{{source.id}}</p>
+          </a></h4>
+          <p>{{source.description}}</p>
+    
+            {% endfor %}
+  
+      </ul>
+      </body>
 </html>

@@ -2,7 +2,6 @@ from flask import render_template
 from app import app
 
 # Views
-# Views
 @app.route('/')
 def index():
 
@@ -13,10 +12,10 @@ def index():
     title = 'Home - Welcome to News Article'
     return render_template('index.html', title = title)
 
-@app.route('/news/<int:news_id>')
-def news(news_id):
+@app.route('/source/<int:sources_id>')
+def source(source_id):
 
     '''
     View news page function that returns the news details page and its data
     '''
-    return render_template('news.html',id = news_id)
+    return render_template('sources.html',id = source_id)

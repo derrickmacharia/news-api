@@ -1,3 +1,5 @@
+{% import 'macros.html' as macro%}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,15 +11,28 @@
         {% endif %}
     </head>
     <body>
+
+        <!-- Content block -->
+        {% block content %}
+
+        <!-- Popular movie -->
+        <h3> Popular Movies</h3>
         <ul>
-            {% for source in sources %}
-            <h4><a href="/article/{{source.id}}">
-              <p class="card-text">{{source.id}}</p>
-          </a></h4>
-          <p>{{source.description}}</p>
-    
-            {% endfor %}
-  
-      </ul>
+            {{ macro.displaySourceList(new_sources)}}
+        </ul>
+        <!-- Upcoming movie  -->
+        <h3> Upcoming Movies </h3>
+        <ul>
+            {{ macro.displaySourceList(buisness_sources)}}
+        </ul>
+        <!-- Now showing movie -->
+        <h3>Now Showing</h3>
+        <ul>
+            {{ macro.displaySourceList(entertainment_sources)}}
+        </ul>
+
+
+{% endblock%}
+
       </body>
 </html>

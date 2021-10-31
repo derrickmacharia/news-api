@@ -25,8 +25,28 @@ def get_sources():
         if get_sources_response['sources']:
             sources_results_list = get_sources_response['sources']
             sources_results = process_results(sources_results_list)
-
+            print(sources_results_list)
     return sources_results
+
+# def get_source(id):
+#     get_sources_details_url = base_url.format(id,api_key)
+
+#     with urllib.request.urlopen(get_sources_details_url) as url:
+#         sources_details_data = url.read()
+#         sources_details_response = json.loads(sources_details_data)
+
+#         sources_object = None
+#         if sources_details_response:
+#             id = sources_details_response.get('id')
+#             name = sources_details_response.get('name')
+#             description = sources_details_response.get('description')
+#             url = sources_details_response.get('url')
+#             category = sources_details_response.get('category')
+#             country = sources_details_response.get('country')
+
+#             sources_object = Sources(id,name,description,url,category,country)
+
+#     return sources_object
 
 def process_results(sources_list):
     '''
@@ -52,3 +72,4 @@ def process_results(sources_list):
             sources_results.append(sources_object)
 
     return sources_results
+

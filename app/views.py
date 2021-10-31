@@ -3,6 +3,7 @@ from app import app
 from .request import get_sources
 
 
+
 # Views
 @app.route('/')
 def index():
@@ -12,12 +13,12 @@ def index():
     '''
     # Getting popular movie
     new_source = get_sources()
-    buisness_source = get_sources()
+    business_source = get_sources()
     entertainment_source = get_sources()
     sports_source = get_sources()
     # print(source)
     title = 'Home - Welcome to The best Movie Review Website Online'
-    return render_template('index.html', title = title,new = new_source, buisness = buisness_source , entertainment = entertainment_source, sports = sports_source )
+    return render_template('index.html', title = title,new = new_source, business = business_source , entertainment = entertainment_source, sports = sports_source )
 
 @app.route('/sources/<int:sources_id>')
 def sources(sources_id):

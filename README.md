@@ -2,10 +2,14 @@
 #### This is a News-Api Application, 2/11/2021
 #### By **Derrick Macharia**
 ## Description
-This is an application where the user can choose .
+This is an application where the user can choose variety of news and read news from different news categories.
 
 ## Screenshot of website
-
+<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot.png" alt="">
+Screenshot 2
+<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot (1).png" alt="">
+Screenshot 3
+<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot (2).png" alt="">
 
 ## Setup/Installation Requirements
 * In order to access this Application,
@@ -23,13 +27,6 @@ This is an application where the user can choose .
 * BOOTSTRAP
 * CSS
 
-## BDD  
-* User click the links on navbar to navigate
-* The homepage displays my Profile and repositories
-* On profile page input username that signed in on github
-* Click on submit which will display the users profile and details.
-* On repo page Input the username.
-* On click it will display the users repositories.
 ## Support and contact details
 For more information,comments or clarification contact on derrick.macharia@student.moringaschool.com
 ### License

@@ -76,7 +76,7 @@ def get_articles(sources_id):
             articles_results_list = get_articles_response['articles']
             articles_results = process_articles(articles_results_list)
             
-    print(articles_results_list)        
+    # print(articles_results_list)        
     return articles_results 
 
 

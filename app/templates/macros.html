@@ -30,22 +30,22 @@
 {% macro displayArticleList(articles_list) %}
 
 
-<div class="container-fluid articles">
+<div class="container-fluid ">
 
     <div class="row">
         {% for articles in articles_list %}
-        <div class="col-md-4 ">
-            <div class="news-grid text-center">
-                <div class="news-grid-image"><img src="{{ articles.urlToImage}}" alt="" class="responsive" width="380"></div>
+        <div class="col-md-4 articles">
+            <div class="news-grid text-center articles1">
+                <div class="news-grid-image"><img src="{{ articles.urlToImage}}" alt="" class="responsive"></div>
                 
                 <div class="news-grid-box"> 
-                    {{articles.title}}
-                    {{articles.content}}
+                    <h4>{{articles.title}}</h4>
+                    <p>{{articles.content}}</p>
 
-                     {{articles.publishedAt}}
+                     <p>Published On :{{articles.publishedAt}}</p>
       
                 </div>
-                <a href="{{ articles.url }}" class="btn btn-primary mb-2">Read More</a>
+                    <a href="{{ articles.url }}" class="btn btn-primary mb-2">Read More</a>
 
                 
             </div>

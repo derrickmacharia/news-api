@@ -5,11 +5,8 @@
 This is an application where the user can choose variety of news and read news from different news categories.
 
 ## Screenshot of website
-<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot.png" alt="">
-Screenshot 2
-<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot (1).png" alt="">
-Screenshot 3
-<img src="/home/moringa/Desktop/news-api/app/static/images/Screenshot (2).png" alt="">
+<img src="app/static/images/Screenshot (1).png">
+
 
 ## Setup/Installation Requirements
 * In order to access this Application,

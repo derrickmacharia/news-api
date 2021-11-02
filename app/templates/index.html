@@ -1,47 +1,27 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
-<!-- Styles block -->
-
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
-<!-- Content block -->
 
-    <body>
+{% block content %}
 
-        <!-- Content block -->
-        {% block content %}
-
-        
-      <div class="text-center">
-          <!-- Top News -->
-        <h2> Top News </h2>
-        <hr>
-        <ul>
-            {{ macro.displaySourceList( new )}}
-        </ul>
-        
-        <!--Buisness News  -->
-        <h2> Business News </h2>
-        <hr>
-        <ul>
-            {{ macro.displaySourceList( business )}}
-        </ul>
-        <!-- Entertainment News -->
-        <h2> Entertainment News </h2>
-        <hr>
-        <ul>
-            {{ macro.displaySourceList( entertainment )}}
-        </ul>        
-        <h2> Sports News </h2>
-        <hr>
-        <ul>
-            {{ macro.displaySourceList( sports )}}
-        </ul>
-      </div>
+<body>
+    <!-- Content block -->
+    
+  <div class="text-center">
+      <!-- Top News -->
+    <h2> Top News </h2>
+    <hr>
+    <ul>
+        {{ macro.displaySourceList( new )}}
+    </ul>
+    
+  </div>
+    
+</body>
 
 {% endblock%}
 
-    </body>

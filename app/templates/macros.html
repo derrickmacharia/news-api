@@ -12,10 +12,11 @@
                     <h4>{{ sources.name}}</h4>
                 </div>
                 <div class="panel-body">
-                    <p>{{ sources.description[:100]}}</p>
+                    <p>{{ sources.description[:80]}} ...</p>
                 </div> 
                 <div class="panel-footer">
-                    <a href="/articles/{{ sources.id }}" class="btn btn-primary mb-2">{{sources.name}}</a> 
+
+                    <a href="/articles/{{ sources.id }}" class="btn btn-primary mb-2" >{{sources.name}}</a> 
                  </div>
             </div>
         </div>
@@ -29,17 +30,24 @@
 {% macro displayArticleList(articles_list) %}
 
 
-<div class="container-fluid">
+<div class="container-fluid articles">
 
     <div class="row">
         {% for articles in articles_list %}
         <div class="col-md-4 ">
-            <div class=" text-center">
-                <div> 
+            <div class="news-grid text-center">
+                <div class="news-grid-image"><img src="{{ articles.urlToImage}}" alt="" class="responsive" width="380"></div>
+                
+                <div class="news-grid-box"> 
                     {{articles.title}}
-                    <img src="{{ articles.urlToImage}}" alt="">                 
+                    {{articles.content}}
+
+                     {{articles.publishedAt}}
+      
                 </div>
                 <a href="{{ articles.url }}" class="btn btn-primary mb-2">Read More</a>
+
+                
             </div>
         </div>
         {% endfor %}

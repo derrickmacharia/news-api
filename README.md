@@ -6,6 +6,8 @@ This is an application where the user can choose variety of news and read news f
 
 ## Screenshot of website
 <img src="app/static/images/Screenshot (1).png">
+<img src="app/static/images/Screenshot (2).png">
+<img src="app/static/images/Screenshot (3).png">
 
 
 ## Setup/Installation Requirements
